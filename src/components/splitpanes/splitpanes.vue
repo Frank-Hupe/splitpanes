@@ -155,8 +155,8 @@ const onSplitterDblClick = (event, splitterIndex) => {
 const onPaneClick = (event, paneId) => {
   emitEvent('pane-click', {
     event,
-    index: indexedPanes.value[paneId].index,
-    pane: indexedPanes.value[paneId]
+    index: indexedPanes?.value[paneId]?.index,
+    pane: indexedPanes?.value[paneId]
   })
 }
 
